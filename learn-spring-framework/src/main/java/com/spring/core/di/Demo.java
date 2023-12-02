@@ -22,15 +22,15 @@ class DependencyC {
 
 public class Demo {
 
-    private DependencyA dependencyA;
-    private DependencyB dependencyB;
-    private DependencyC dependencyC;
+    private final DependencyA dependencyA;
+    private final DependencyB dependencyB;
+    private final DependencyC dependencyC;
 
-//    public Demo(DependencyA dependencyA, DependencyB dependencyB, DependencyC dependencyC) {
-//        this.dependencyA = dependencyA;
-//        this.dependencyB = dependencyB;
-//        this.dependencyC = dependencyC;
-//    }
+    public Demo(DependencyA dependencyA, DependencyB dependencyB, DependencyC dependencyC) {
+        this.dependencyA = dependencyA;
+        this.dependencyB = dependencyB;
+        this.dependencyC = dependencyC;
+    }
 
 
     public void setDependencyA(DependencyA dependencyA) {
