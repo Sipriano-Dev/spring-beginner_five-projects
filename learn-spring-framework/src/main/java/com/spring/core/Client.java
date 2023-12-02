@@ -2,6 +2,8 @@ package com.spring.core;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+
 
 public class Client {
 
@@ -10,6 +12,7 @@ public class Client {
         //Creating Spring IoC Container
         //Read the Configuration Class
         //Create and manage the Spring beans
+
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 
         //Retrieve spring beans from spring IoC container
